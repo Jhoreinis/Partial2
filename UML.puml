@@ -1,0 +1,50 @@
+@startuml
+class Parqueadero{
+plazaC:int
+plazaSUV:int
+plazaVan:int
+tipoCars:str
+horario()
+plazas()
+cobrohoras()
+}
+class CocheCars{
+plazaC:int
+plazaSUV:int
+plazaVan:int
+tipoCars:str
+horario()
+plazas()
+cobrohoras()
+cochescompactos()
+cobrocompactos()
+}
+class CocheVan{
+plazaC:int
+plazaSUV:int
+plazaVan:int
+tipoCars:str
+horario()
+plazas()
+cobrohoras()
+cochesVan()
+cobrosVan()
+}
+class CocheSuv{
+plazaC:int
+plazaSUV:int
+plazaVan:int
+tipoCars:str
+horario()
+plazas()
+cobrohoras()
+cochesSuv()
+cobrosSuv()
+
+}
+
+Parqueadero <|-- CocheCars
+Parqueadero <|-- CocheVan
+Parqueadero <|-- CocheSuv
+
+@enduml
